@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    background-image: url(https://images.indianexpress.com/2013/12/dieting-weight-loss-getty-images-7591.jpg);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: #d2cece74;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color:aquamarine;
+    color:darkblue;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:aqua;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p {
+    font-weight: bold;
+    color: #333;
+}
+
+.bmi-meter {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.bmi-meter::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background-color: black; /* Needle color */
+    transition: transform 0.5s ease;
+}
+
+/* Example styling for meter colors */
+.bmi-meter {
+    background: linear-gradient(to right, blue 0%, green 25%, orange 50%, red 75%, red 100%);
+}
+.bmi-meter .needle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: 2px;
+    background-color: black; /* Needle color */
+    transition: transform 0.5s ease;
+}
